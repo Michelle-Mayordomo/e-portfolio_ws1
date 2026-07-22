@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Mayordomo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        
+        <div class="logo"><button class="hero-btn" onclick="showInfo()">
+                👤
+            </button>Portfolio</div>
+        <br><br>
+
+        <ul class="nav-links">
+            <button id="themeBtn" class="hero-btn" onclick="toggleTheme()">
+                🌙
+            </button>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <header id="home" class="hero-header">
+        <div class="header-content">
+
+            <h1 id="mainHeading">Michelle D. Mayordomo</h1>
+
+            <h2>Bachelor of Science in Information Technology</h2>
+
+            <p>Aspiring Web Developer</p>
+
+        </div>
+    </header>
+
+    
+    <main class="container" id="portfolio">
+
+        
+        <section id="about" class="section-card">
+
+            <h2>About Me</h2>
+
+            <div class="about-container">
+
+                <img src="mee.png" alt="Michelle's Photo">
+
+                <div class="about-text">
+
+                    <p>
+                        Hello! I'm Michelle Mayordomo, a Bachelor of Science in Information Technology.
+                        I enjoy learning web development and creating simple websites.
+                        Ngano mag English paman ko nga Ilonggo ko ya.
+                        Basta kabalo ko mag pindot-pindot sa keyboard, amo nag IT ko.
+                        Indi e-judge ang akun gihimo kun indi mo gusto nga e-judge ko buong buhay mo.
+                    </p>
+
+                    <h3>Educational Background</h3>
+
+                    <ul class="edu-list">
+    
+                         <li><strong>Elementary:</strong> Naci Integrated School</li>
+                         <li><strong>High School:</strong> San Jose National High School</li>
+                          <li><strong>College:</strong> Holy Child Central Colleges, Inc. (2024 - Present)</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+     
+        <section id="skills" class="section-card">
+
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+                <div class="skills-card">HTML</div>
+                <div class="skills-card">CSS</div>
+                <div class="skills-card">Python</div>
+                <div class="skills-card">MS Word</div>
+                <div class="skills-card">MS Excel</div>
+            </div>
+
+        </section>
+
+       
+        <section id="project" class="section-card">
+
+            <h2>My Project</h2>
+
+            <div class="project-grid">
+
+            
+
+
+            <div class="project-grid">
+
+                <div class="card">
+
+                    <div class="card-img-wrapper">
+                        <img src="amo ni.png" alt="My First Project">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>My First Project</h3>
+
+                        <p class="project-desc">
+                            This is my first project using HTML and CSS. It's very simple.
+                        </p>
+
+                        <span class="tag">HTML</span>
+<span class="tag">CSS</span>
+                        <button class="btn" onclick="viewProject()">
+                            View Project
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-img-wrapper">
+                        <img src="project.png" alt="My Second Project">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>My Second Project</h3>
+
+                        <p class="project-desc">
+                            This is my second project using HTML, CSS and JavaScript to create a product inventory
+                        </p>
+
+                        <span class="tag">HTML</span>
+ <span class="tag">CSS</span>
+ <span class="tag">JavaScript</span>
+                        <button class="btn" onclick="viewProject()">
+                            View Project
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="card">
+
+                    <div class="card-img-wrapper">
+                        <img src="Figma.png" alt="My First Project">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>My Third Project</h3>
+
+                        <p class="project-desc">
+                            This is my third project but first time to use a Figma to create a prototype.
+                        </p>
+
+                        <span class="tag">Figma</span>
+
+                        <button class="btn" onclick="viewProject()">
+                            View Project
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+      
+        <section id="contact" class="section-card">
+
+            <h2>My Contact</h2>
+
+            <ul class="contact-list">
+
+                <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:mayordomomichelle90@gmail.com">
+                        mayordomomichelle90@gmail.com
+                    </a>
+                </li>
+
+                <li><strong>Phone:</strong> 09925221957</li>
+
+                <li><strong>Facebook:</strong> Michelle Diaz</li>
+
+                <li><strong>GitHub:</strong> Michelle-Mayordomo</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    
+    <div id="projectView" style="display:none; text-align:center; padding:20px;">
+
+        <h2>My Simple Project</h2>
+
+        <img src="amo ni.png"
+             alt="Figma Prototype"
+             style="width:90%; max-width:1000px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.3);">
+
+        <br><br>
+
+        <button class="btn" onclick="backPortfolio()">
+            ← Back
+        </button>
+
+    </div>
+<div id="projectView" style="display:none; text-align:center; padding:40px;">
+
+        <h2>My Product Inventory Project</h2>
+
+        <img src="project.png"
+             alt="Figma Prototype"
+             style="width:90%; max-width:1000px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.3);">
+
+        <br><br>
+
+        <button class="btn" onclick="backPortfolio()">
+            ← Back
+        </button>
+
+    </div>
+    <div id="projectView" style="display:none; text-align:center; padding:40px;">
+
+        <h2>My Prototype Project</h2>
+
+        <img src="Figma.png"
+             alt="Figma Prototype"
+             style="width:90%; max-width:1000px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,.3);">
+
+        <br><br>
+
+        <button class="btn" onclick="backPortfolio()">
+            ← Back
+        </button>
+
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2026 Michelle Mayordomo. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
